@@ -3,7 +3,8 @@
 }
 
 :root {
-    --primary-color: #1ebfc1;
+    --primary-color-1: #6839cc;
+    --primary-color-2: #ff782c;
 }
 
 html,
@@ -23,4 +24,42 @@ body {
 /* Common */
 a {
     text-decoration: none;
+}
+
+.display-area {
+    width: 1520px;
+    max-width: calc(1520px - 30px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* Header */
+
+.header__body {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__items {
+    display: flex;
+}
+
+.navbar__link {
+    color: #2f3a3b;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.action__icon {
+    display: flex;
+    align-items: center;
+    color: #000;
 }
