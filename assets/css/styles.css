@@ -70,7 +70,7 @@ a {
 .header {
     width: 100%;
     height: 750px;
-    background-image: url(/assets/images/rev-home.jpg);
+    background-image: url(./assets/images/rev-home.jpg);
     background-repeat: no-repeat;
     background-size: 133%;
     background-position: center -50px;
