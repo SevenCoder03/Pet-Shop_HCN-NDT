@@ -18,7 +18,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "MADE Tommy Soft", sans-serif;
 }
 
 /* Common */
@@ -28,38 +28,216 @@ a {
 
 .display-area {
     width: 1520px;
-    max-width: calc(1520px - 30px);
     margin-left: auto;
     margin-right: auto;
 }
 
-.link {
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 178px;
+    padding: 0 30px;
+    line-height: 52px;
+    font-weight: 600;
     font-size: 1.6rem;
-    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    border-radius: 999px;
+    background-color: var(--primary-color-1);
+    transition: 1s ease-in-out;
+}
+
+.chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    color: #000;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.btn:hover .chevron {
+    color: #fff;
+    background-color: var(--primary-color-2);
 }
 
 /* Header */
 
-.header__body {
-    display: flex;
-    align-items: center;
+.header {
+    width: 100%;
+    height: 750px;
+    background-image: url(/assets/images/rev-home.jpg);
+    background-repeat: no-repeat;
+    background-size: 133%;
+    background-position: center -50px;
 }
 
-.navbar__items {
+/* Header Head */
+
+.header__head {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    line-height: 24px;
+}
+
+.navbar {
+    margin-left: 48px;
+}
+
+.navbar__list {
     display: flex;
 }
 
 .navbar__link {
-    color: #2f3a3b;
+    display: block;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #000;
+    padding: 20px 25px;
+    text-wrap: nowrap;
+}
+
+.navbar--active .navbar__link,
+.navbar__link:hover {
+    color: var(--primary-color-2);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 7px;
+}
+
+.search {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: 85px;
+}
+
+#search__form {
+    width: 546px;
+    height: 47px;
+    padding: 0 20px;
+    word-spacing: 3px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    border: none;
+    border-radius: 999px;
+    border-color: #f5f5f5;
+    background: #f5f5f5;
+}
+
+#search__form:focus {
+    border: 1px solid var(--primary-color-1);
+    outline: none;
+}
+
+.search__button {
+    position: absolute;
+    left: 506px;
+    top: 7.5px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-color-1);
+}
+
+.search__button:hover {
+    background-color: var(--primary-color-2);
 }
 
 .action {
     display: flex;
     align-items: center;
+    margin-left: 33px;
+    gap: 24px;
 }
 
 .action__icon {
     display: flex;
     align-items: center;
     color: #000;
+}
+
+.action__icon:hover {
+    color: var(--primary-color-2);
+}
+
+.action__money {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+/* Header Body */
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.header__chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.header__chevron:hover {
+    color: #fff;
+    background-color: var(--primary-color-1);
+}
+
+.header__content {
+    width: 88.4%;
+    text-align: start;
+}
+
+.header__title {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: var(--primary-color-2);
+}
+
+.header__heading {
+    margin-top: 11px;
+    width: 40%;
+    font-size: 6.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.header__desc {
+    margin-top: 15px;
+    width: 35%;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.header__btn {
+    margin-top: 51px;
+}
+
+.header__btn:hover {
+    opacity: 0.8;
 }

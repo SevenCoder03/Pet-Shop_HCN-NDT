@@ -3,18 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pet Shop</title>
+        <title>Pet Shop N&T</title>
 
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
         <!-- Embed fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -22,7 +17,8 @@
     <body>
         <header class="header">
             <div class="display-area">
-                <div class="header__body">
+                <!-- Header head -->
+                <div class="header__head">
                     <!-- Logo -->
                     <a href="#">
                         <img
@@ -34,27 +30,21 @@
 
                     <!-- Navbar -->
                     <nav class="navbar">
-                        <ul class="navbar__items">
+                        <ul class="navbar__list">
                             <li class="navbar--active">
-                                <a href="#" class="navbar__link link"> Home </a>
+                                <a href="#" class="navbar__link"> Home </a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link link">
-                                    Shop
-                                </a>
+                                <a href="#!" class="navbar__link"> Shop </a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link link">
-                                    Page
-                                </a>
+                                <a href="#!" class="navbar__link"> Page </a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link link">
-                                    Blog
-                                </a>
+                                <a href="#!" class="navbar__link"> Blog </a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link link">
+                                <a href="#!" class="navbar__link">
                                     Contact Us
                                 </a>
                             </li>
@@ -63,11 +53,12 @@
 
                     <!-- Search -->
                     <div class="search">
-                        <form action="/search" method="get">
+                        <form action="#!" method="get">
                             <input
                                 type="search"
                                 name="q"
                                 placeholder="Search products..."
+                                id="search__form"
                             />
                             <button type="submit" class="search__button">
                                 <svg
@@ -79,8 +70,8 @@
                                 >
                                     <path
                                         d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
-                                        stroke="currentColor"
-                                        stroke-width="2"
+                                        stroke="white"
+                                        stroke-width="3"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
                                     />
@@ -94,8 +85,8 @@
                         <a href="#!" class="action__icon">
                             <svg
                                 fill="currentColor"
-                                width="16px"
-                                height="21px"
+                                width="20px"
+                                height="25px"
                                 viewBox="0 0 48 48"
                                 data-name="Layer 1"
                                 id="Layer_1"
@@ -103,20 +94,22 @@
                             >
                                 <title />
                                 <path
+                                    stroke-width="10"
                                     d="M24,21A10,10,0,1,1,34,11,10,10,0,0,1,24,21ZM24,5a6,6,0,1,0,6,6A6,6,0,0,0,24,5Z"
                                 />
                                 <path
+                                    stroke-width="10"
                                     d="M42,47H6a2,2,0,0,1-2-2V39A16,16,0,0,1,20,23h8A16,16,0,0,1,44,39v6A2,2,0,0,1,42,47ZM8,43H40V39A12,12,0,0,0,28,27H20A12,12,0,0,0,8,39Z"
                                 />
                             </svg>
                         </a>
                         <a href="#!" class="action__icon">
                             <svg
-                                width="21px"
-                                height="18px"
+                                width="26px"
+                                height="23px"
                                 viewBox="0 0 64 64"
                                 xmlns="http://www.w3.org/2000/svg"
-                                stroke-width="3"
+                                stroke-width="6"
                                 stroke="currentColor"
                                 fill="none"
                             >
@@ -127,8 +120,8 @@
                         </a>
                         <a href="#!" class="action__icon">
                             <svg
-                                width="21px"
-                                height="18px"
+                                width="26px"
+                                height="23px"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -136,16 +129,86 @@
                                 <path
                                     d="M2 3H4.5L6.5 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM6.07142 14H18L21 5H4.78571M11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
                                     stroke="currentColor"
-                                    stroke-width="1.5"
+                                    stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 />
                             </svg>
-                            <span class="acction__money">$0.00</span>
+                            <strong class="action__money">$0.00</strong>
                         </a>
+                    </div>
+                </div>
+
+                <!-- Header body -->
+                <div class="header__body">
+                    <div class="header__chevron">
+                        <svg
+                            width="16px"
+                            height="16px"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M15 6L9 12L15 18"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                    <div class="header__content">
+                        <div class="header__title">GET 10% DISCOUNT</div>
+                        <h1 class="header__heading">Feeding Your Adult Cat</h1>
+                        <p class="header__desc">
+                            Your cat will be in optimal condition if fed with
+                            the right product
+                        </p>
+                        <a href="#!" class="header__btn btn">
+                            Shop Now
+                            <div class="chevron">
+                                <svg
+                                    width="16px"
+                                    height="16px"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M9 6L15 12L9 18"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header__chevron">
+                        <svg
+                            width="16px"
+                            height="16px"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M9 6L15 12L9 18"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
                     </div>
                 </div>
             </div>
         </header>
+
+        <main style="height: 100000px"></main>
+        <!-- Js -->
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
