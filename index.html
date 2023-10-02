@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pet Shop N&T</title>
 
@@ -24,12 +25,12 @@
                         <img
                             src="./assets/images/logo.svg"
                             alt="PetShop N&T"
-                            class="logo"
+                            class="header__logo"
                         />
                     </a>
 
                     <!-- Navbar -->
-                    <nav class="navbar">
+                    <nav class="header__navbar">
                         <ul class="navbar__list">
                             <li class="navbar--active">
                                 <a href="#" class="navbar__link"> Home </a>
@@ -52,7 +53,7 @@
                     </nav>
 
                     <!-- Search -->
-                    <div class="search">
+                    <div class="header__search">
                         <form action="#!" method="get">
                             <input
                                 type="search"
@@ -81,60 +82,68 @@
                     </div>
 
                     <!-- Action -->
-                    <div class="action">
-                        <a href="#!" class="action__icon">
-                            <svg
-                                fill="currentColor"
-                                width="20px"
-                                height="25px"
-                                viewBox="0 0 48 48"
-                                data-name="Layer 1"
-                                id="Layer_1"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title />
-                                <path
-                                    stroke-width="10"
-                                    d="M24,21A10,10,0,1,1,34,11,10,10,0,0,1,24,21ZM24,5a6,6,0,1,0,6,6A6,6,0,0,0,24,5Z"
-                                />
-                                <path
-                                    stroke-width="10"
-                                    d="M42,47H6a2,2,0,0,1-2-2V39A16,16,0,0,1,20,23h8A16,16,0,0,1,44,39v6A2,2,0,0,1,42,47ZM8,43H40V39A12,12,0,0,0,28,27H20A12,12,0,0,0,8,39Z"
-                                />
-                            </svg>
+                    <div class="header__action">
+                        <a href="#!" class="action__account">
+                            <div class="action__icon">
+                                <svg
+                                    fill="currentColor"
+                                    width="20px"
+                                    height="25px"
+                                    viewBox="0 0 48 48"
+                                    data-name="Layer 1"
+                                    id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title />
+                                    <path
+                                        stroke-width="10"
+                                        d="M24,21A10,10,0,1,1,34,11,10,10,0,0,1,24,21ZM24,5a6,6,0,1,0,6,6A6,6,0,0,0,24,5Z"
+                                    />
+                                    <path
+                                        stroke-width="10"
+                                        d="M42,47H6a2,2,0,0,1-2-2V39A16,16,0,0,1,20,23h8A16,16,0,0,1,44,39v6A2,2,0,0,1,42,47ZM8,43H40V39A12,12,0,0,0,28,27H20A12,12,0,0,0,8,39Z"
+                                    />
+                                </svg>
+                            </div>
                         </a>
-                        <a href="#!" class="action__icon">
-                            <svg
-                                width="26px"
-                                height="23px"
-                                viewBox="0 0 64 64"
-                                xmlns="http://www.w3.org/2000/svg"
-                                stroke-width="6"
-                                stroke="currentColor"
-                                fill="none"
-                            >
-                                <path
-                                    d="M9.06,25C7.68,17.3,12.78,10.63,20.73,10c7-.55,10.47,7.93,11.17,9.55a.13.13,0,0,0,.25,0c3.25-8.91,9.17-9.29,11.25-9.5C49,9.45,56.51,13.78,55,23.87c-2.16,14-23.12,29.81-23.12,29.81S11.79,40.05,9.06,25Z"
-                                />
-                            </svg>
-                        </a>
-                        <a href="#!" class="action__icon">
-                            <svg
-                                width="26px"
-                                height="23px"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M2 3H4.5L6.5 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM6.07142 14H18L21 5H4.78571M11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
+                        <a href="#!" class="action__wishlist">
+                            <div class="action__icon">
+                                <svg
+                                    width="26px"
+                                    height="23px"
+                                    viewBox="0 0 64 64"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    stroke-width="6"
                                     stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                            <strong class="action__money">$0.00</strong>
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M9.06,25C7.68,17.3,12.78,10.63,20.73,10c7-.55,10.47,7.93,11.17,9.55a.13.13,0,0,0,.25,0c3.25-8.91,9.17-9.29,11.25-9.5C49,9.45,56.51,13.78,55,23.87c-2.16,14-23.12,29.81-23.12,29.81S11.79,40.05,9.06,25Z"
+                                    />
+                                </svg>
+                            </div>
+                            <span class="wishlist__count count">0</span>
+                        </a>
+                        <a href="#!" class="action__cart">
+                            <div class="action__icon">
+                                <svg
+                                    width="26px"
+                                    height="23px"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 3H4.5L6.5 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM6.07142 14H18L21 5H4.78571M11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <strong class="action__money">$0.00</strong>
+                            </div>
+                            <span class="cart__count count">0</span>
                         </a>
                     </div>
                 </div>
@@ -207,7 +216,72 @@
             </div>
         </header>
 
-        <main style="height: 100000px"></main>
+        <main style="height: 100000px">
+            <!-- Features -->
+            <div class="features">
+                <div class="display-area">
+                    <div class="features__body">
+                        <div class="features__item">
+                            <img
+                                src="./assets/icons/pet-easy.svg"
+                                alt=""
+                                class="features__icon"
+                            />
+                            <p class="features__desc">
+                                Making Pet Parenting Easy
+                            </p>
+                        </div>
+                        <div class="features__item">
+                            <img
+                                src="./assets/icons/free-delivery.svg"
+                                alt=""
+                                class="features__icon"
+                            />
+                            <p class="features__desc">
+                                Wide Range, Free Delivery
+                            </p>
+                        </div>
+                        <div class="features__item">
+                            <img
+                                src="./assets/icons/rewards.svg"
+                                alt=""
+                                class="features__icon"
+                            />
+                            <p class="features__desc">Save More With Rewards</p>
+                        </div>
+                        <div class="features__item">
+                            <img
+                                src="./assets/icons/best-choose.svg"
+                                alt=""
+                                class="features__icon"
+                            />
+                            <p class="features__desc">
+                                Helping You Choose the Best
+                            </p>
+                        </div>
+                        <div class="features__item">
+                            <img
+                                src="./assets/icons/delivered.svg"
+                                alt=""
+                                class="features__icon"
+                            />
+                            <p class="features__desc">Delivered To Your Door</p>
+                        </div>
+                        <div class="features__item">
+                            <img
+                                src="./assets/icons/protection-card-payment.svg"
+                                alt=""
+                                class="features__icon"
+                            />
+                            <p class="features__desc">
+                                100% Protected By Paypal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
         <!-- Js -->
         <script src="./assets/js/script.js"></script>
     </body>
