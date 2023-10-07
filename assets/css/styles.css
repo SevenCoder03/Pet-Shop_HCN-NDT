@@ -39,7 +39,7 @@ a {
     width: 178px;
     padding: 0 30px;
     line-height: 52px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.6rem;
     text-align: center;
     color: #fff;
@@ -387,4 +387,138 @@ a {
     text-align: center;
     margin-top: 20px;
     font-weight: 700;
+}
+
+/* Offers */
+
+.offers {
+    margin-top: 100px;
+}
+
+.offers__heading {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    margin-left: 30px;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.offers__icon {
+    position: absolute;
+    top: -18px;
+    left: 194px;
+    z-index: -1;
+    width: 50x;
+    height: 30px;
+}
+
+.offers__list {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+.offers__item {
+    width: calc(25% - 30px);
+    height: 260px;
+    color: #fff;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.offers__item:hover {
+    transform: scale(1.02);
+}
+
+.offers__title {
+    margin-left: 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.offers__sale {
+    margin-left: 40px;
+    font-size: 6.4rem;
+    font-weight: 700;
+}
+
+.offers__desc {
+    margin-left: 40px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.offers__sub-desc {
+    margin-left: 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.offers__btn {
+    margin-left: 40px;
+    padding: 0 0;
+    width: 130px;
+    font-size: 1.4rem;
+    line-height: 38px;
+}
+
+.offers__item-1 {
+    background-image: url("../images/offers-1.jpg");
+}
+
+.offers__item-1 .offers__title,
+.offers__item-2 .offers__desc,
+.offers__item-3 .offers__title,
+.offers__item-4 .offers__sale {
+    margin-top: 43px;
+}
+
+.offers__item-1 .offers__btn {
+    margin-top: 10px;
+}
+
+.offers__item-2 {
+    background-image: url("../images/offers-2.jpg");
+}
+
+.offers__item-2 span {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.offers__item-2 .offers__title,
+.offers__item-4 .offers__title {
+    line-height: 1.4;
+    font-size: 2rem;
+}
+
+.offers__item-2 .offers__sub-desc {
+    margin-top: 45px;
+}
+
+.offers__item-3 {
+    background-image: url("../images/offers-3.jpg");
+}
+
+.offers__item-3 .offers__btn {
+    margin-top: 60px;
+}
+
+.offers__item-4 {
+    background-image: url("../images/offers-4.jpg");
+}
+
+.offers__item-4 .offers__sub-desc {
+    margin-top: 30px;
+}
+
+.offers__item-4 span {
+    font-weight: 300;
 }
