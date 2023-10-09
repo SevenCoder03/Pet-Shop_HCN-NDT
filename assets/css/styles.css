@@ -7,6 +7,11 @@
     --primary-color-2: #ff782c;
 }
 
+::selection {
+    background-color: var(--primary-color-2);
+    color: white;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -433,7 +438,6 @@ a {
     position: relative;
     right: 0;
     top: 0;
-    z-index: 0;
     font-size: 3.2rem;
     font-weight: 700;
 }
@@ -442,7 +446,6 @@ a {
     position: absolute;
     top: -14px;
     right: -27px;
-    z-index: -1;
     width: 45px;
     height: 30px;
 }
@@ -509,7 +512,6 @@ a {
     position: relative;
     left: 0;
     top: 0;
-    z-index: 0;
     margin-left: 30px;
     font-size: 3.2rem;
     font-weight: 700;
@@ -519,7 +521,6 @@ a {
     position: absolute;
     top: -18px;
     left: 194px;
-    z-index: -1;
     width: 45px;
     height: 30px;
 }
@@ -654,7 +655,6 @@ a {
     position: relative;
     left: 0;
     top: 0;
-    z-index: 0;
     font-size: 3.2rem;
     font-weight: 700;
 }
@@ -663,7 +663,6 @@ a {
     position: absolute;
     top: -18px;
     left: 280px;
-    z-index: -1;
     width: 45px;
     height: 30px;
 }
@@ -895,7 +894,6 @@ a {
     position: relative;
     right: 0;
     top: 0;
-    z-index: 0;
     margin-top: 90px;
     font-size: 3.2rem;
     font-weight: 700;
@@ -905,7 +903,88 @@ a {
     position: absolute;
     top: -14px;
     right: -27px;
-    z-index: -1;
     width: 45px;
     height: 30px;
+}
+
+/* Brands */
+
+.brands {
+    margin-top: 80px;
+    padding: 100px 0;
+    background-color: #ede0e0;
+}
+
+.brands__content {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.brands__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands__heading {
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.brands__icon {
+    position: absolute;
+    top: -14px;
+    right: -27px;
+    width: 45px;
+    height: 30px;
+}
+
+.brands__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands__view-all {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: opacity 0.3;
+}
+
+.brands__chevron {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+}
+
+.brands__action:hover .brands__view-all {
+    opacity: 1;
+}
+
+.brands__action:hover .brands__chevron {
+    color: #fff;
+    border: none;
+    background-color: var(--primary-color-2);
+}
+
+.brands__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.brands__item {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    width: 16.66%;
+    background-color: #fff;
+    border: 1px dashed #eee;
+    transition: all 0.3s;
 }
