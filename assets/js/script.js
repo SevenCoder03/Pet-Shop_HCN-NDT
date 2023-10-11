@@ -10,7 +10,7 @@ searchInput.addEventListener("blur", () => {
     searchInput.setAttribute("placeholder", "Search products...");
 });
 
-// Brands Hover
+// Brands hover
 
 const brandList = document.querySelectorAll(".brands__item");
 

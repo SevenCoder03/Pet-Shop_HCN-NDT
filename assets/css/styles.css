@@ -63,6 +63,7 @@ a {
     border-radius: 50%;
     background-color: #fff;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover .chevron {
@@ -172,6 +173,10 @@ a {
     color: #666;
 }
 
+.product__name:hover {
+    color: var(--primary-color-2);
+}
+
 .product__price {
     font-weight: 700;
     color: var(--primary-color-1);
@@ -247,6 +252,7 @@ a {
     width: 546px;
     height: 47px;
     padding: 0 20px;
+    font-family: "MADE Tommy Soft", sans-serif;
     word-spacing: 3px;
     letter-spacing: 0.8px;
     font-weight: 500;
@@ -987,4 +993,93 @@ a {
     background-color: #fff;
     border: 1px dashed #eee;
     transition: all 0.3s;
+}
+
+/* Viewed */
+
+.viewed {
+    margin-top: 10px;
+}
+
+.viewed__content {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.viewed__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewed__action {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.viewed__chevron {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ccc;
+}
+
+.viewed__chevron:hover {
+    color: #fff;
+    border: none;
+    background-color: var(--primary-color-2);
+}
+
+.viewed__heading {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 90px;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.viewed__icon {
+    position: absolute;
+    top: -14px;
+    right: -27px;
+    width: 45px;
+    height: 30px;
+}
+
+.viewed__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+}
+
+.viewed__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: calc(25% - 18.75px);
+}
+
+.viewed__title {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #000;
+}
+
+.viewed__price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color-1);
+    line-height: 1.4;
+}
+
+.viewed__img {
+    width: 80px;
+    height: 80px;
 }
