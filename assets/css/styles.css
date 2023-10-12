@@ -113,6 +113,7 @@ a {
     transform: translateX(100%);
     opacity: 0;
     transition: all 0.5s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .product__wishlist {
@@ -144,6 +145,7 @@ a {
     opacity: 0;
     transform: translateY(100%);
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .product:hover .product__wishlist,
@@ -164,6 +166,7 @@ a {
 .product__add-to-cart:hover {
     color: #fff;
     background-color: var(--primary-color-2);
+    border: none;
 }
 
 .product__caption {
@@ -279,6 +282,7 @@ a {
     border-radius: 50%;
     border: none;
     background-color: var(--primary-color-1);
+    cursor: pointer;
 }
 
 .search__button:hover {
@@ -1072,6 +1076,10 @@ a {
     color: #000;
 }
 
+.viewed__title:hover {
+    color: var(--primary-color-2);
+}
+
 .viewed__price {
     font-size: 1.6rem;
     font-weight: 700;
@@ -1082,4 +1090,196 @@ a {
 .viewed__img {
     width: 80px;
     height: 80px;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 85px;
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__content {
+    padding: 90px 115px 40px;
+    border-top: 1px dashed #ccc;
+}
+
+.footer__row-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    padding-bottom: 45px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.footer__column:first-child {
+    width: 20.4%;
+}
+
+.footer__column:last-child {
+    width: 25%;
+}
+
+.footer__desc {
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.footer__desc span {
+    color: var(--primary-color-2);
+}
+
+.footer__hotline {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 1.4;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.footer__hotline span {
+    font-size: 1.6;
+    color: var(--primary-color-2);
+}
+
+.footer__social {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.footer__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #000;
+    background-color: #f5f5f5;
+    transition: all 0.3s;
+}
+
+.footer__btn:hover {
+    color: #fff;
+    background-color: var(--primary-color-1);
+}
+
+.footer__title {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.footer__item {
+    display: block;
+    font-size: 1.4rem;
+    color: #666;
+    padding: 12px 0;
+}
+
+.footer__item:hover {
+    color: var(--primary-color-2);
+}
+
+.footer__email {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+#email__form {
+    width: 100%;
+    height: 47px;
+    padding: 0 20px;
+    font-family: "MADE Tommy Soft", sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    border: none;
+    border-radius: 999px;
+    border-color: #f5f5f5;
+    background: #f5f5f5;
+}
+
+#email__form:focus {
+    border: 1px solid var(--primary-color-1);
+    outline: none;
+}
+
+.email__button {
+    position: absolute;
+    left: 283px;
+    top: 7.5px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color-1);
+    cursor: pointer;
+}
+
+.email__button:hover {
+    background-color: var(--primary-color-2);
+}
+
+.footer__download {
+    margin-top: 25px;
+}
+
+.download__desc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.download__system {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.footer__row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 115px 40px;
+}
+
+.footer__copyright,
+.footer__policy a {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.footer__policy {
+    display: flex;
+    gap: 10px;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.footer__copyright a {
+    color: #000;
+    font-weight: 500;
+}
+
+.footer__copyright a:hover,
+.footer__policy a:hover {
+    color: var(--primary-color-2);
 }
