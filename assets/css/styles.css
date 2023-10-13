@@ -296,6 +296,92 @@ a {
     gap: 24px;
 }
 
+.action__account {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.action__login-form {
+    display: none;
+    position: absolute;
+    top: 88px;
+    right: 169px;
+    width: 320px;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid var(--primary-color-2);
+}
+
+.login-form__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form__sign-in {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.login-form__create-account {
+    font-size: 1.4rem;
+    color: #444;
+    opacity: 0.8;
+}
+
+.login-form__create-account:hover {
+    opacity: 1;
+}
+
+.login-form__container p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.login-form__container span {
+    color: red;
+}
+
+#uname__form,
+#psw__form {
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: "MADE Tommy Soft", sans-serif;
+}
+
+#uname__form:focus,
+#psw__form:focus {
+    border: 1px solid var(--primary-color-1);
+    outline: none;
+}
+
+.login-form__btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--primary-color-2);
+    cursor: pointer;
+}
+
+.login-form__lost-pass {
+    margin-left: 148px;
+    font-size: 1.4rem;
+    color: #aaa;
+    text-decoration: underline;
+}
+
 .action__icon {
     display: flex;
     align-items: center;
@@ -1071,6 +1157,7 @@ a {
 }
 
 .viewed__title {
+    display: inline-block;
     font-size: 1.6rem;
     line-height: 1.4;
     color: #000;

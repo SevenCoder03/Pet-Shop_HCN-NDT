@@ -83,7 +83,7 @@
 
                     <!-- Action -->
                     <div class="header__action">
-                        <a href="#!" class="action__account">
+                        <a href="#!" id="account" class="action__account">
                             <div class="action__icon">
                                 <svg
                                     fill="currentColor"
@@ -104,6 +104,52 @@
                                         d="M42,47H6a2,2,0,0,1-2-2V39A16,16,0,0,1,20,23h8A16,16,0,0,1,44,39v6A2,2,0,0,1,42,47ZM8,43H40V39A12,12,0,0,0,28,27H20A12,12,0,0,0,8,39Z"
                                     />
                                 </svg>
+                            </div>
+                            <div id="login__form" class="action__login-form">
+                                <div class="login-form__head">
+                                    <div class="login-form__sign-in">
+                                        Sign in
+                                    </div>
+                                    <a
+                                        href="#!"
+                                        class="login-form__create-account"
+                                    >
+                                        Create an Account
+                                    </a>
+                                </div>
+                                <div class="login-form__container">
+                                    <label for="uname"
+                                        ><p>
+                                            Username or email <span>*</span>
+                                        </p></label
+                                    >
+                                    <input
+                                        type="text"
+                                        placeholder="Username"
+                                        name="uname"
+                                        id="uname__form"
+                                        required
+                                    />
+                                    <label for="psw"
+                                        ><p>Password <span>*</span></p></label
+                                    >
+                                    <input
+                                        type="password"
+                                        placeholder="Password"
+                                        name="psw"
+                                        id="psw__form"
+                                        required
+                                    />
+                                    <button
+                                        type="submit"
+                                        class="login-form__btn"
+                                    >
+                                        LOGIN
+                                    </button>
+                                </div>
+                                <a href="#!" class="login-form__lost-pass">
+                                    Lost your password?
+                                </a>
                             </div>
                         </a>
                         <a href="#!" class="action__wishlist">
@@ -5249,9 +5295,9 @@
                                     class="viewed__img"
                                 />
                                 <div class="viewed__caption">
-                                    <p class="viewed__title">
+                                    <a href="#!" class="viewed__title">
                                         Fantastic Plastic Clock
-                                    </p>
+                                    </a>
                                     <strong class="viewed__price"
                                         >$305.49</strong
                                     >
@@ -5265,9 +5311,9 @@
                                     class="viewed__img"
                                 />
                                 <div class="viewed__caption">
-                                    <p class="viewed__title">
+                                    <a href="#!" class="viewed__title">
                                         Fantastic Marble Shoes
-                                    </p>
+                                    </a>
                                     <strong class="viewed__price"
                                         >$66.17</strong
                                     >
@@ -5281,9 +5327,9 @@
                                     class="viewed__img"
                                 />
                                 <div class="viewed__caption">
-                                    <p class="viewed__title">
+                                    <a href="#!" class="viewed__title">
                                         Rustic Marble Car
-                                    </p>
+                                    </a>
                                     <strong class="viewed__price"
                                         >$305.49</strong
                                     >
@@ -5297,9 +5343,9 @@
                                     class="viewed__img"
                                 />
                                 <div class="viewed__caption">
-                                    <p class="viewed__title">
+                                    <a href="#!" class="viewed__title">
                                         Small Bronze Chair
-                                    </p>
+                                    </a>
                                     <strong class="viewed__price"
                                         >$262.45</strong
                                     >
@@ -5313,9 +5359,9 @@
                                     class="viewed__img"
                                 />
                                 <div class="viewed__caption">
-                                    <p class="viewed__title">
+                                    <a href="#!" class="viewed__title">
                                         Lightweight Aluminum Clock
-                                    </p>
+                                    </a>
                                     <strong class="viewed__price"
                                         >$305.49</strong
                                     >
