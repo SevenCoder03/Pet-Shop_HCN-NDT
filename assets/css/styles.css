@@ -15,6 +15,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 html {
@@ -521,7 +522,7 @@ a {
     margin-top: 70px;
 }
 
-.categories__row-1 {
+.categories__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -563,14 +564,8 @@ a {
     background-color: var(--primary-color-2);
 }
 
-.categories__row-2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-    margin-top: 10px;
-    padding-top: 20px;
-    overflow: hidden;
+.slick-initialized .slick-slide {
+    margin: 30px 20px 0;
 }
 
 .categories__item {
@@ -589,7 +584,7 @@ a {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .categories__title {
@@ -601,7 +596,7 @@ a {
 /* Offers */
 
 .offers {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .offers__heading {
@@ -771,6 +766,7 @@ a {
     color: #666;
     font-size: 1.4rem;
     font-weight: 700;
+    cursor: pointer;
     transition: all 0.3s;
 }
 

@@ -14,10 +14,14 @@ searchInput.addEventListener("blur", () => {
 
 var account = document.getElementById("account");
 var loginForm = document.getElementById("login__form");
+var usernameInput = document.getElementById("uname__form");
+var passwordInput = document.getElementById("psw__form");
 
 account.addEventListener("click", function () {
     if (loginForm.style.display === "block") {
         loginForm.style.display = "none";
+        usernameInput.value = "";
+        passwordInput.value = "";
     } else {
         loginForm.style.display = "block";
     }

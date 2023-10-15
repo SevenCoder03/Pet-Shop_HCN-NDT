@@ -12,6 +12,13 @@
         <!-- Embed fonts -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
+        <!-- Slick -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -331,7 +338,7 @@
             <div class="categories">
                 <div class="display-area">
                     <div class="categories__content">
-                        <div class="categories__row-1">
+                        <div class="categories__row">
                             <h2 class="categories__heading">
                                 Browse By Categories
                                 <img
@@ -341,7 +348,9 @@
                                 />
                             </h2>
                             <div class="categories__action">
-                                <div class="categories__chevron chevron">
+                                <button
+                                    class="categories__chevron chevron prev"
+                                >
                                     <svg
                                         width="16px"
                                         height="16px"
@@ -357,8 +366,10 @@
                                             stroke-linejoin="round"
                                         />
                                     </svg>
-                                </div>
-                                <div class="categories__chevron chevron">
+                                </button>
+                                <button
+                                    class="categories__chevron chevron next"
+                                >
                                     <svg
                                         width="16px"
                                         height="16px"
@@ -374,10 +385,10 @@
                                             stroke-linejoin="round"
                                         />
                                     </svg>
-                                </div>
+                                </button>
                             </div>
                         </div>
-                        <div class="categories__row-2">
+                        <div class="categories__list">
                             <a href="#!" class="categories__item">
                                 <img
                                     src="./assets/images/categories-1.jpg"
@@ -5738,5 +5749,18 @@
         </footer>
         <!-- Js -->
         <script src="./assets/js/script.js"></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="./assets/js/slick.js"></script>
     </body>
 </html>
