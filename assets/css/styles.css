@@ -568,6 +568,10 @@ a {
     margin: 30px 20px 0;
 }
 
+.categories__list {
+    display: flex;
+}
+
 .categories__item {
     color: #000;
 }
