@@ -100,9 +100,10 @@ a {
 }
 
 .register-form__container p {
-    margin-top: 20px;
+    margin-top: 15px;
     color: #666;
     font-size: 1.5rem;
+    line-height: 1.6;
 }
 
 .register-form__container a {
