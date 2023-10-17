@@ -204,7 +204,7 @@
                         <div class="account__row-2">
                             <div class="account__login-form">
                                 <div class="login-form__heading">Log in</div>
-                                <div class="login-form__container">
+                                <form class="login-form__container">
                                     <label for="uname"
                                         ><p>
                                             Username or email <span>*</span>
@@ -225,12 +225,6 @@
                                         id="psw__form"
                                         required
                                     />
-                                    <button
-                                        type="submit"
-                                        class="login-form__btn"
-                                    >
-                                        Log In
-                                    </button>
                                     <div class="login-form__remember">
                                         <input
                                             type="checkbox"
@@ -238,7 +232,13 @@
                                         />
                                         Remember me
                                     </div>
-                                </div>
+                                    <button
+                                        type="submit"
+                                        class="login-form__btn"
+                                    >
+                                        Log In
+                                    </button>
+                                </form>
                                 <a href="#!" class="login-form__lost-pass">
                                     Lost your password?
                                 </a>
@@ -247,7 +247,7 @@
                                 <div class="register-form__heading">
                                     Register
                                 </div>
-                                <div class="register-form__container">
+                                <form class="register-form__container">
                                     <label for="uname"
                                         ><p>
                                             Email address <span>*</span>
@@ -277,7 +277,7 @@
                                     >
                                         Register
                                     </button>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -623,8 +623,18 @@
                 <div class="display-area">
                     <div class="footer__row-2">
                         <p class="footer__copyright">
-                            Copyright © 2023 <a href="#!">Seven</a> and
-                            <a href="#!">Jully</a>. All rights reserved.
+                            Copyright © 2023
+                            <a
+                                href="https://www.facebook.com/SevenCoder03"
+                                target="_blank"
+                                >Seven</a
+                            >
+                            and
+                            <a
+                                href="https://www.facebook.com/DucThiep02"
+                                target="_blank"
+                                >Jully</a
+                            >. All rights reserved.
                         </p>
                         <img
                             src="./assets/images/payment.png"

@@ -177,6 +177,10 @@
     text-decoration: underline;
 }
 
+.login-form__lost-pass:hover {
+    color: #000;
+}
+
 .action__icon {
     display: flex;
     align-items: center;

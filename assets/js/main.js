@@ -1,3 +1,32 @@
+// Background header slider
+const backgroundImages = [
+    "url(../assets/images/rev-home-1.jpg)",
+    "url(../assets/images/rev-home-2.jpg)",
+];
+
+let currentImageIndex = 0;
+const header = document.getElementById("header");
+
+function prevBackground() {
+    currentImageIndex =
+        (currentImageIndex - 1 + backgroundImages.length) %
+        backgroundImages.length;
+    updateBackground();
+}
+
+function nextBackground() {
+    currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+    updateBackground();
+}
+
+setInterval(() => {
+    nextBackground();
+}, 5000);
+
+function updateBackground() {
+    header.style.backgroundImage = backgroundImages[currentImageIndex];
+}
+
 // Search form
 
 const searchInput = document.getElementById("search__form");
@@ -49,6 +78,37 @@ pswInput.addEventListener("focus", () => {
 
 pswInput.addEventListener("blur", () => {
     pswInput.setAttribute("placeholder", "Password");
+});
+
+// Filter product trending
+function filterProducts(category, button) {
+    const products = document.querySelectorAll(".product");
+    products.forEach((product) => {
+        const categories = product.getAttribute("data-category");
+        if (categories) {
+            const categoriesArray = categories.split(" ");
+            if (categoriesArray.includes(category)) {
+                product.style.display = "block";
+            } else {
+                product.style.display = "none";
+            }
+        }
+    });
+    const buttons = document.querySelectorAll(".trending__btn");
+    buttons.forEach((btn) => {
+        btn.classList.remove("trending--active");
+    });
+
+    button.classList.add("trending--active");
+}
+
+window.addEventListener("load", function () {
+    const allItemsButton = document.querySelector(
+        ".trending__btn.trending--active"
+    );
+    if (allItemsButton) {
+        filterProducts("all", allItemsButton);
+    }
 });
 
 // Brands hover
