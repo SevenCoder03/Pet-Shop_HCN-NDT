@@ -1,7 +1,7 @@
 // Background header slider
 const backgroundImages = [
-    "url(../assets/images/rev-home-1.jpg)",
-    "url(../assets/images/rev-home-2.jpg)",
+    "url(../../assets/images/rev-home-1.jpg)",
+    "url(../../assets/images/rev-home-2.jpg)",
 ];
 
 let currentImageIndex = 0;
