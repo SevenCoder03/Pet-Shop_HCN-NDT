@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Account</title>
+        <title>Page not found</title>
 
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -13,9 +13,9 @@
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
         <!-- Styles -->
-        <link rel="stylesheet" href="./assets/css/account.css" />
         <link rel="stylesheet" href="./assets/css/header.css" />
         <link rel="stylesheet" href="./assets/css/footer.css" />
+        <link rel="stylesheet" href="./assets/css/404.css" />
     </head>
     <body>
         <!-- Header -->
@@ -187,91 +187,20 @@
         </header>
 
         <main>
-            <div class="account">
-                <div class="display-area">
-                    <div class="account__content">
-                        <div class="account__row-1">
-                            <a href="index.html">Home Page</a>>
-                            <p>My account</p>
-                        </div>
-                        <div class="account__row-2">
-                            <div class="account__login-form">
-                                <h2 class="login-form__heading">Log in</h2>
-                                <form class="login-form__container">
-                                    <label for="uname"
-                                        ><p>
-                                            Username or email <span>*</span>
-                                        </p></label
-                                    >
-                                    <input
-                                        type="text"
-                                        name="uname"
-                                        id="uname__form"
-                                        required
-                                    />
-                                    <label for="psw"
-                                        ><p>Password <span>*</span></p></label
-                                    >
-                                    <input
-                                        type="password"
-                                        name="psw"
-                                        id="psw__form"
-                                        required
-                                    />
-                                    <div class="login-form__remember">
-                                        <input
-                                            type="checkbox"
-                                            name="remember"
-                                        />
-                                        Remember me
-                                    </div>
-                                    <button
-                                        type="submit"
-                                        class="login-form__btn"
-                                    >
-                                        Log In
-                                    </button>
-                                </form>
-                                <a href="#!" class="login-form__lost-pass">
-                                    Lost your password?
-                                </a>
-                            </div>
-                            <div class="account__register-form">
-                                <h2 class="register-form__heading">Register</h2>
-                                <form class="register-form__container">
-                                    <label for="uname"
-                                        ><p>
-                                            Email address <span>*</span>
-                                        </p></label
-                                    >
-                                    <input
-                                        type="text"
-                                        name="uname"
-                                        id="uname__form"
-                                        required
-                                    />
-                                    <p>
-                                        A link to set a new password will be
-                                        sent to your email address.
-                                    </p>
-                                    <p>
-                                        Your personal data will be used to
-                                        support your experience throughout this
-                                        website, to manage access to your
-                                        account, and for other purposes
-                                        described in our
-                                        <a href="#!">privacy policy</a>.
-                                    </p>
-                                    <button
-                                        type="submit"
-                                        class="register-form__btn"
-                                    >
-                                        Register
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+            <div class="not-found">
+                <div class="not-found__content">
+                    <h1 class="not-found__heading">
+                        Oops! That Page Can’t Be Found.
+                    </h1>
+                    <p class="not-found__desc">
+                        Page doesn’t exist or some other error occurred. <br />
+                        Go to our <a href="index.html">Home page</a>
+                    </p>
+                    <img
+                        src="./assets/images/404_image.png"
+                        alt="not-found-img"
+                        class="not-found__img"
+                    />
                 </div>
             </div>
         </main>

@@ -213,7 +213,7 @@ a {
 
 .header {
     width: 100%;
-    height: 750px;
+    height: 100vh;
     background-image: url("../images/rev-home-1.jpg");
     background-repeat: no-repeat;
     background-size: 133%;
