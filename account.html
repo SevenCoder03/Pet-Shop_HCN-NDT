@@ -6,6 +6,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Account</title>
 
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -13,9 +91,9 @@
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
         <!-- Styles -->
-        <link rel="stylesheet" href="./assets/css/account.css" />
         <link rel="stylesheet" href="./assets/css/header.css" />
         <link rel="stylesheet" href="./assets/css/footer.css" />
+        <link rel="stylesheet" href="./assets/css/account.css" />
     </head>
     <body>
         <!-- Header -->
@@ -26,15 +104,15 @@
                     <img
                         src="./assets/images/logo.svg"
                         alt="PetShop N&T"
-                        class="header__logo"
+                        class="logo"
                     />
                 </a>
 
                 <!-- Navbar -->
                 <nav class="header__navbar">
                     <ul class="navbar__list">
-                        <li class="navbar--active">
-                            <a href="#" class="navbar__link"> Home </a>
+                        <li>
+                            <a href="index.html" class="navbar__link"> Home </a>
                         </li>
                         <li>
                             <a href="#!" class="navbar__link"> Shop </a>
@@ -46,7 +124,9 @@
                             <a href="#!" class="navbar__link"> Blog </a>
                         </li>
                         <li>
-                            <a href="#!" class="navbar__link"> Contact Us </a>
+                            <a href="contact.html" class="navbar__link">
+                                Contact Us
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -107,7 +187,10 @@
                         <div id="login__form" class="action__login-form">
                             <div class="login-form__head">
                                 <div class="login-form__sign-in">Sign in</div>
-                                <a href="#!" class="login-form__create-account">
+                                <a
+                                    href="account.html"
+                                    class="login-form__create-account"
+                                >
                                     Create an Account
                                 </a>
                             </div>
@@ -186,6 +269,7 @@
             </div>
         </header>
 
+        <!-- Main -->
         <main>
             <div class="account">
                 <div class="display-area">
@@ -642,7 +726,8 @@
             </div>
         </footer>
         <!-- Js -->
-        <script src="./assets/js/main.js"></script>
-        <script src="./assets/js/account.js"></script>
+        <script src="./assets/js/search.js"></script>
+        <script src="./assets/js/login.js"></script>
+        <script src="./assets/js/email.js"></script>
     </body>
 </html>

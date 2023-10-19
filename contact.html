@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Page not found</title>
+        <title>Contact us</title>
 
         <!-- Favicon -->
         <link
@@ -93,7 +93,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/header.css" />
         <link rel="stylesheet" href="./assets/css/footer.css" />
-        <link rel="stylesheet" href="./assets/css/404.css" />
+        <link rel="stylesheet" href="./assets/css/contact.css" />
     </head>
     <body>
         <!-- Header -->
@@ -104,7 +104,7 @@
                     <img
                         src="./assets/images/logo.svg"
                         alt="PetShop N&T"
-                        class="header__logo"
+                        class="logo"
                     />
                 </a>
 
@@ -112,9 +112,7 @@
                 <nav class="header__navbar">
                     <ul class="navbar__list">
                         <li>
-                            <a href="index.htmls" class="navbar__link">
-                                Home
-                            </a>
+                            <a href="index.html" class="navbar__link"> Home </a>
                         </li>
                         <li>
                             <a href="#!" class="navbar__link"> Shop </a>
@@ -125,10 +123,8 @@
                         <li>
                             <a href="#!" class="navbar__link"> Blog </a>
                         </li>
-                        <li>
-                            <a href="contact.html" class="navbar__link">
-                                Contact Us
-                            </a>
+                        <li class="navbar--active">
+                            <a href="#" class="navbar__link"> Contact Us </a>
                         </li>
                     </ul>
                 </nav>
@@ -189,7 +185,10 @@
                         <div id="login__form" class="action__login-form">
                             <div class="login-form__head">
                                 <div class="login-form__sign-in">Sign in</div>
-                                <a href="#!" class="login-form__create-account">
+                                <a
+                                    href="account.html"
+                                    class="login-form__create-account"
+                                >
                                     Create an Account
                                 </a>
                             </div>
@@ -269,24 +268,7 @@
         </header>
 
         <!-- Main -->
-        <main>
-            <div class="not-found">
-                <div class="not-found__content">
-                    <h1 class="not-found__heading">
-                        Oops! That Page Can’t Be Found.
-                    </h1>
-                    <p class="not-found__desc">
-                        Page doesn’t exist or some other error occurred. <br />
-                        Go to our <a href="index.html">Home page</a>
-                    </p>
-                    <img
-                        src="./assets/images/404_image.png"
-                        alt="not-found-img"
-                        class="not-found__img"
-                    />
-                </div>
-            </div>
-        </main>
+        <main style="height: 1000px"></main>
 
         <!-- Footer -->
         <footer class="footer">

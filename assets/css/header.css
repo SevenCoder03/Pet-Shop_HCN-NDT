@@ -10,7 +10,7 @@
 }
 
 .header__navbar {
-    margin-left: 48px;
+    margin-left: 38px;
 }
 
 .navbar__list {
@@ -39,7 +39,7 @@
     width: 35.9%;
     position: relative;
     top: 0;
-    left: 0;
+    right: 0;
     margin-left: 85px;
 }
 
@@ -64,8 +64,8 @@
 
 .search__button {
     position: absolute;
-    left: 322px;
     top: 7.5px;
+    right: 8px;
     width: 32px;
     height: 32px;
     display: flex;
@@ -128,9 +128,10 @@
 }
 
 .login-form__container p {
-    margin-top: 20px;
+    margin-top: 15px;
     color: #666;
     font-size: 1.5rem;
+    line-height: 1.6;
 }
 
 .login-form__container span {

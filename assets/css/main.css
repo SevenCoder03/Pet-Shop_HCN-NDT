@@ -117,7 +117,7 @@ a {
     border-radius: 50%;
     background-color: #fff;
     transform: translateX(100%);
-    visibility: hidden;
+    opacity: 0;
     transition: all 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -147,7 +147,7 @@ a {
     line-height: 0;
     color: #fff;
     border: none;
-    visibility: hidden;
+    opacity: 0;
     transform: translateY(100%);
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
     cursor: pointer;
@@ -157,7 +157,7 @@ a {
 .product:hover .product__compare,
 .product:hover .product__quick-view,
 .product:hover .product__add-to-cart {
-    visibility: visible;
+    opacity: 1;
     transform: translate(0);
     cursor: pointer;
 }
@@ -231,7 +231,7 @@ a {
 }
 
 .header__navbar {
-    margin-left: 48px;
+    margin-left: 38px;
 }
 
 .navbar__list {
@@ -257,10 +257,10 @@ a {
 }
 
 .header__search {
-    width: 35.9%;
     position: relative;
     top: 0;
-    left: 0;
+    right: 0;
+    width: 35.9%;
     margin-left: 85px;
 }
 
@@ -285,8 +285,8 @@ a {
 
 .search__button {
     position: absolute;
-    left: 484px;
     top: 7.5px;
+    right: 8px;
     width: 32px;
     height: 32px;
     display: flex;
@@ -349,9 +349,10 @@ a {
 }
 
 .login-form__container p {
-    margin-top: 10px;
+    margin-top: 15px;
     color: #666;
     font-size: 1.5rem;
+    line-height: 10000000000s;
 }
 
 .login-form__container span {

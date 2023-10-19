@@ -99,8 +99,6 @@
     position: relative;
     top: 0;
     right: 0;
-    left: 0;
-    bottom: 0;
     margin-top: 20px;
 }
 
@@ -125,8 +123,8 @@
 
 .email__button {
     position: absolute;
-    left: 283px;
     top: 7.5px;
+    right: 8px;
     width: 32px;
     height: 32px;
     display: flex;
