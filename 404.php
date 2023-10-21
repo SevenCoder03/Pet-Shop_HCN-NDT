@@ -100,7 +100,7 @@
         <header class="header">
             <div class="header__content">
                 <!-- Logo -->
-                <a href="index.html">
+                <a href="index.php">
                     <img
                         src="./assets/images/logo.svg"
                         alt="PetShop N&T"
@@ -112,7 +112,7 @@
                 <nav class="header__navbar">
                     <ul class="navbar__list">
                         <li>
-                            <a href="index.html" class="navbar__link"> Home </a>
+                            <a href="index.php" class="navbar__link"> Home </a>
                         </li>
                         <li>
                             <a href="#!" class="navbar__link"> Shop </a>
@@ -124,7 +124,7 @@
                             <a href="#!" class="navbar__link"> Blog </a>
                         </li>
                         <li>
-                            <a href="contact.html" class="navbar__link">
+                            <a href="contact.php" class="navbar__link">
                                 Contact Us
                             </a>
                         </li>
@@ -275,7 +275,7 @@
                     </h1>
                     <p class="not-found__desc">
                         Page doesn’t exist or some other error occurred. <br />
-                        Go to our <a href="index.html">Home page</a>
+                        Go to our <a href="index.php">Home page</a>
                     </p>
                     <img
                         src="./assets/images/404_image.png"
@@ -292,7 +292,7 @@
                 <div class="display-area">
                     <div class="footer__row-1">
                         <div class="footer__column">
-                            <a href="#">
+                            <a href="index.php">
                                 <img
                                     src="./assets/images/logo.svg"
                                     alt=""

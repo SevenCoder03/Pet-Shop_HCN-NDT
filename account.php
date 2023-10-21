@@ -100,7 +100,7 @@
         <header class="header">
             <div class="header__content">
                 <!-- Logo -->
-                <a href="index.html">
+                <a href="index.php">
                     <img
                         src="./assets/images/logo.svg"
                         alt="PetShop N&T"
@@ -112,7 +112,7 @@
                 <nav class="header__navbar">
                     <ul class="navbar__list">
                         <li>
-                            <a href="index.html" class="navbar__link"> Home </a>
+                            <a href="index.php" class="navbar__link"> Home </a>
                         </li>
                         <li>
                             <a href="#!" class="navbar__link"> Shop </a>
@@ -124,7 +124,7 @@
                             <a href="#!" class="navbar__link"> Blog </a>
                         </li>
                         <li>
-                            <a href="contact.html" class="navbar__link">
+                            <a href="contact.php" class="navbar__link">
                                 Contact Us
                             </a>
                         </li>
@@ -188,7 +188,7 @@
                             <div class="login-form__head">
                                 <div class="login-form__sign-in">Sign in</div>
                                 <a
-                                    href="account.html"
+                                    href="account.php"
                                     class="login-form__create-account"
                                 >
                                     Create an Account
@@ -275,7 +275,7 @@
                 <div class="display-area">
                     <div class="account__content">
                         <div class="account__row-1">
-                            <a href="index.html">Home Page</a> >
+                            <a href="index.php">Home Page</a> >
                             <p>My account</p>
                         </div>
                         <div class="account__row-2">
@@ -426,7 +426,7 @@
                 <div class="display-area">
                     <div class="footer__row-1">
                         <div class="footer__column">
-                            <a href="#">
+                            <a href="index.php">
                                 <img
                                     src="./assets/images/logo.svg"
                                     alt=""

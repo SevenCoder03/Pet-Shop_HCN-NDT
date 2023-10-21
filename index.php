@@ -132,7 +132,7 @@
                                 <a href="#!" class="navbar__link"> Blog </a>
                             </li>
                             <li>
-                                <a href="contact.html" class="navbar__link">
+                                <a href="contact.php" class="navbar__link">
                                     Contact Us
                                 </a>
                             </li>
@@ -198,7 +198,7 @@
                                         Sign in
                                     </div>
                                     <a
-                                        href="account.html"
+                                        href="account.php"
                                         target="_blank"
                                         class="login-form__create-account"
                                     >
