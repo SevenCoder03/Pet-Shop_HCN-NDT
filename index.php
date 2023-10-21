@@ -215,7 +215,7 @@
                                         type="text"
                                         placeholder="Username"
                                         name="uname"
-                                        id="uname__form"
+                                        id="login-form__uname"
                                         required
                                     />
                                     <label for="psw"
@@ -225,7 +225,7 @@
                                         type="password"
                                         placeholder="Password"
                                         name="psw"
-                                        id="psw__form"
+                                        id="login-form__psw"
                                         required
                                     />
                                     <button

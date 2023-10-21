@@ -112,9 +112,7 @@
                 <nav class="header__navbar">
                     <ul class="navbar__list">
                         <li>
-                            <a href="index.htmls" class="navbar__link">
-                                Home
-                            </a>
+                            <a href="index.html" class="navbar__link"> Home </a>
                         </li>
                         <li>
                             <a href="#!" class="navbar__link"> Shop </a>
@@ -203,7 +201,7 @@
                                     type="text"
                                     placeholder="Username"
                                     name="uname"
-                                    id="uname__form"
+                                    id="login-form__uname"
                                     required
                                 />
                                 <label for="psw"
@@ -213,7 +211,7 @@
                                     type="password"
                                     placeholder="Password"
                                     name="psw"
-                                    id="psw__form"
+                                    id="login-form__psw"
                                     required
                                 />
                                 <button type="submit" class="login-form__btn">

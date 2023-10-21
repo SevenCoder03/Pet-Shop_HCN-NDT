@@ -2,8 +2,8 @@
 
 var account = document.getElementById("account");
 var loginForm = document.getElementById("login__form");
-var usernameInput = document.getElementById("uname__form");
-var passwordInput = document.getElementById("psw__form");
+var usernameInput = document.getElementById("login-form__uname");
+var passwordInput = document.getElementById("login-form__psw");
 
 account.addEventListener("click", function () {
     if (loginForm.style.display === "block") {
@@ -17,7 +17,7 @@ account.addEventListener("click", function () {
 
 // Username form
 
-const unameInput = document.getElementById("uname__form");
+const unameInput = document.getElementById("login-form__uname");
 
 unameInput.addEventListener("focus", () => {
     unameInput.removeAttribute("placeholder");
@@ -29,7 +29,7 @@ unameInput.addEventListener("blur", () => {
 
 // psw form
 
-const pswInput = document.getElementById("psw__form");
+const pswInput = document.getElementById("login-form__psw");
 
 pswInput.addEventListener("focus", () => {
     pswInput.removeAttribute("placeholder");

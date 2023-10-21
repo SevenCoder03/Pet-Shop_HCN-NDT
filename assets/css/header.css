@@ -99,6 +99,7 @@
     position: absolute;
     top: 88px;
     right: 270px;
+    z-index: 1;
     width: 320px;
     padding: 20px;
     background-color: #fff;
@@ -138,8 +139,8 @@
     color: red;
 }
 
-#uname__form,
-#psw__form {
+#login-form__uname,
+#login-form__psw {
     width: 100%;
     margin-top: 5px;
     padding: 15px;
@@ -149,8 +150,8 @@
     font-family: "MADE Tommy Soft", sans-serif;
 }
 
-#uname__form:focus,
-#psw__form:focus {
+#login-form__uname:focus,
+#login-form__psw:focus {
     border: 1px solid var(--primary-color-1);
     outline: none;
 }

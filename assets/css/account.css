@@ -92,7 +92,8 @@ a {
     line-height: 1.6;
 }
 
-.login-form__remember {
+.login-form__remember,
+.register-form__remember {
     display: flex;
     align-items: center;
     color: #666;
@@ -105,6 +106,39 @@ a {
     color: #666;
     font-size: 1.5rem;
     line-height: 1.6;
+}
+
+.register-form__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.register-form__item {
+    width: 100%;
+}
+
+#register-form__uname,
+#register-form__psw,
+#register-form__email,
+#register-form__address,
+#register-form__phone {
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: "MADE Tommy Soft", sans-serif;
+}
+
+#register-form__uname:focus,
+#register-form__psw:focus,
+#register-form__email:focus,
+#register-form__address:focus,
+#register-form__phone:focus {
+    border: 1px solid var(--primary-color-1);
+    outline: none;
 }
 
 .register-form__container a {
@@ -122,7 +156,7 @@ a {
 .register-form__btn {
     width: 100%;
     height: 45px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 1.4rem;
     font-weight: 700;

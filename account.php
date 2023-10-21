@@ -204,7 +204,7 @@
                                     type="text"
                                     placeholder="Username"
                                     name="uname"
-                                    id="uname__form"
+                                    id="login-form__uname"
                                     required
                                 />
                                 <label for="psw"
@@ -214,7 +214,7 @@
                                     type="password"
                                     placeholder="Password"
                                     name="psw"
-                                    id="psw__form"
+                                    id="login-form__psw"
                                     required
                                 />
                                 <button type="submit" class="login-form__btn">
@@ -275,10 +275,11 @@
                 <div class="display-area">
                     <div class="account__content">
                         <div class="account__row-1">
-                            <a href="index.html">Home Page</a>>
+                            <a href="index.html">Home Page</a> >
                             <p>My account</p>
                         </div>
                         <div class="account__row-2">
+                            <!-- Login -->
                             <div class="account__login-form">
                                 <h2 class="login-form__heading">Log in</h2>
                                 <form class="login-form__container">
@@ -290,7 +291,7 @@
                                     <input
                                         type="text"
                                         name="uname"
-                                        id="uname__form"
+                                        id="login-form__uname"
                                         required
                                     />
                                     <label for="psw"
@@ -299,7 +300,7 @@
                                     <input
                                         type="password"
                                         name="psw"
-                                        id="psw__form"
+                                        id="login-form__psw"
                                         required
                                     />
                                     <div class="login-form__remember">
@@ -320,32 +321,91 @@
                                     Lost your password?
                                 </a>
                             </div>
+                            <!-- Register -->
                             <div class="account__register-form">
                                 <h2 class="register-form__heading">Register</h2>
                                 <form class="register-form__container">
+                                    <div class="register-form__row">
+                                        <div class="register-form__item">
+                                            <label for="uname"
+                                                ><p>
+                                                    Username <span>*</span>
+                                                </p></label
+                                            >
+                                            <input
+                                                type="text"
+                                                name="uname"
+                                                id="register-form__uname"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="register-form__item">
+                                            <label for="uname"
+                                                ><p>
+                                                    Phone <span>*</span>
+                                                </p></label
+                                            >
+                                            <input
+                                                type="text"
+                                                name="uname"
+                                                id="register-form__phone"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
                                     <label for="uname"
-                                        ><p>
-                                            Email address <span>*</span>
-                                        </p></label
+                                        ><p>Address <span>*</span></p></label
                                     >
                                     <input
                                         type="text"
                                         name="uname"
-                                        id="uname__form"
+                                        id="register-form__address"
                                         required
                                     />
-                                    <p>
-                                        A link to set a new password will be
-                                        sent to your email address.
-                                    </p>
-                                    <p>
-                                        Your personal data will be used to
-                                        support your experience throughout this
-                                        website, to manage access to your
-                                        account, and for other purposes
-                                        described in our
-                                        <a href="#!">privacy policy</a>.
-                                    </p>
+                                    <label for="email"
+                                        ><p>Email <span>*</span></p></label
+                                    >
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="register-form__email"
+                                        required
+                                    />
+                                    <div class="register-form__row">
+                                        <div class="register-form__item">
+                                            <label for="psw"
+                                                ><p>Password <span>*</span></p>
+                                            </label>
+                                            <input
+                                                type="password"
+                                                name="psw"
+                                                id="register-form__psw"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="register-form__item">
+                                            <label for="psw"
+                                                ><p>
+                                                    Confirm password
+                                                    <span>*</span>
+                                                </p></label
+                                            >
+                                            <input
+                                                type="password"
+                                                name="psw"
+                                                id="register-form__psw"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="register-form__remember">
+                                        <input
+                                            type="checkbox"
+                                            name="remember"
+                                        />
+                                        I agree to the <a href="#!">Term</a> and
+                                        <a href="#!">Privacy Policy</a>
+                                    </div>
                                     <button
                                         type="submit"
                                         class="register-form__btn"
