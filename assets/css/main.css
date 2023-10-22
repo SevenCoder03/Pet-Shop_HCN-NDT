@@ -39,6 +39,10 @@ a {
     margin-right: auto;
 }
 
+.hidden {
+    display: none;
+}
+
 .btn {
     display: flex;
     justify-content: center;
@@ -375,6 +379,20 @@ a {
 #login-form__psw:focus {
     border: 1px solid var(--primary-color-1);
     outline: none;
+}
+
+.login-form__eye-psw {
+    position: relative;
+}
+
+.login-form__eye-open,
+.login-form__eye-close {
+    position: absolute;
+    top: 43px;
+    right: 10px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    max-width: 20px;
 }
 
 .login-form__btn {
