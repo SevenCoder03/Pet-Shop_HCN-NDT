@@ -233,54 +233,176 @@
                         <!-- Register -->
                         <div class="account__register-form">
                             <h2 class="register-form__heading">Register</h2>
-                            <form class="register-form__container">
+                            <form class="register-form__container" id="registerForm">
                                 <div class="register-form__row">
-                                    <div class="register-form__item">
+                                    <div class="register-form__group">
                                         <label for="uname">
                                             <p>
                                                 Username <span>*</span>
                                             </p>
                                         </label>
-                                        <input type="text" name="uname" id="register-form__uname" required />
+                                        <input type="text" name="uname" id="register-form__uname"
+                                            class="form-control" />
+                                        <span class="form-message"></span>
                                     </div>
-                                    <div class="register-form__item">
-                                        <label for="uname">
+                                    <div class="register-form__group">
+                                        <label for="phone">
                                             <p>
                                                 Phone <span>*</span>
                                             </p>
                                         </label>
-                                        <input type="text" name="uname" id="register-form__phone" required />
+                                        <input type="text" name="phone" id="register-form__phone"
+                                            class="form-control" />
+                                        <span class="form-message"></span>
                                     </div>
                                 </div>
-                                <label for="uname">
-                                    <p>Address <span>*</span></p>
-                                </label>
-                                <input type="text" name="uname" id="register-form__address" required />
-                                <label for="email">
-                                    <p>Email <span>*</span></p>
-                                </label>
-                                <input type="email" name="email" id="register-form__email" required />
                                 <div class="register-form__row">
-                                    <div class="register-form__item">
+                                    <div class="register-form__group">
+                                        <label>
+                                            <p>Gender <span>*</span></p>
+                                        </label>
+                                        <div class="form-control">
+                                            <div class="form-control__row">
+                                                <input type="radio" name="gender" value="male" />
+                                                <label for="genderMale">Male</label>
+                                            </div>
+
+                                            <div class="form-control__row">
+                                                <input type="radio" name="gender" value="female" />
+                                                <label for="genderFemale">Female</label>
+                                            </div>
+                                        </div>
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="register-form__group">
+                                        <label>
+                                            <p>Hobbies <span>*</span></p>
+                                        </label>
+                                        <div class="form-control">
+                                            <div class="form-control__row">
+                                                <input type="checkbox" name="hobby" value="dog"
+                                                    id="register-form__hobbyDog">
+                                                <label for="hobbyDog">Cat</label>
+                                            </div>
+
+                                            <div class="form-control__row">
+                                                <input type="checkbox" name="hobby" value="cat"
+                                                    id="register-form__hobbyCat">
+                                                <label for="hobbyCat">Dog</label>
+                                            </div>
+                                        </div>
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                                <div class="register-form__group">
+                                    <label>
+                                        <p>Country <span>*</span></p>
+                                    </label>
+                                    <select id="register-form__country" name="country">
+                                        <option value="">Select country</option>
+                                        <option value="afghanistan">Afghanistan</option>
+                                        <option value="albania">Albania</option>
+                                        <option value="algeria">Algeria</option>
+                                        <option value="andorra">Andorra</option>
+                                        <option value="angola">Angola</option>
+                                        <option value="argentina">Argentina</option>
+                                        <option value="australia">Australia</option>
+                                        <option value="austria">Austria</option>
+                                        <option value="bangladesh">Bangladesh</option>
+                                        <option value="belgium">Belgium</option>
+                                        <option value="brazil">Brazil</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="china">China</option>
+                                        <option value="colombia">Colombia</option>
+                                        <option value="denmark">Denmark</option>
+                                        <option value="egypt">Egypt</option>
+                                        <option value="finland">Finland</option>
+                                        <option value="france">France</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="greece">Greece</option>
+                                        <option value="hungary">Hungary</option>
+                                        <option value="india">India</option>
+                                        <option value="indonesia">Indonesia</option>
+                                        <option value="ireland">Ireland</option>
+                                        <option value="italy">Italy</option>
+                                        <option value="japan">Japan</option>
+                                        <option value="kenya">Kenya</option>
+                                        <option value="malaysia">Malaysia</option>
+                                        <option value="mexico">Mexico</option>
+                                        <option value="netherlands">Netherlands</option>
+                                        <option value="new-zealand">New Zealand</option>
+                                        <option value="nigeria">Nigeria</option>
+                                        <option value="norway">Norway</option>
+                                        <option value="pakistan">Pakistan</option>
+                                        <option value="philippines">Philippines</option>
+                                        <option value="poland">Poland</option>
+                                        <option value="portugal">Portugal</option>
+                                        <option value="qatar">Qatar</option>
+                                        <option value="russia">Russia</option>
+                                        <option value="saudi-arabia">Saudi Arabia</option>
+                                        <option value="singapore">Singapore</option>
+                                        <option value="south-africa">South Africa</option>
+                                        <option value="south-korea">South Korea</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="sweden">Sweden</option>
+                                        <option value="switzerland">Switzerland</option>
+                                        <option value="thailand">Thailand</option>
+                                        <option value="turkey">Turkey</option>
+                                        <option value="uae">United Arab Emirates</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="usa">United States</option>
+                                        <option value="vietnam">Vietnam</option>
+                                        <option value="zimbabwe">Zimbabwe</option>
+                                    </select>
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="register-form__group">
+                                    <label for="address">
+                                        <p>Address <span>*</span></p>
+                                    </label>
+                                    <input type="text" name="address" id="register-form__address"
+                                        class="form-control" />
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="register-form__group">
+                                    <label for="email">
+                                        <p>Email <span>*</span></p>
+                                    </label>
+                                    <input type="email" name="email" id="register-form__email" class="form-control" />
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="register-form__row">
+                                    <div class="register-form__group">
                                         <label for="psw">
                                             <p>Password <span>*</span></p>
                                         </label>
-                                        <input type="password" name="psw" id="register-form__psw" required />
+                                        <input type="password" name="psw" id="register-form__psw"
+                                            class="form-control" />
+                                        <span class="form-message"></span>
                                     </div>
-                                    <div class="register-form__item">
-                                        <label for="psw">
+                                    <div class="register-form__group">
+                                        <label for="confirmPsw">
                                             <p>
                                                 Confirm password
                                                 <span>*</span>
                                             </p>
                                         </label>
-                                        <input type="password" name="psw" id="register-form__psw" required />
+                                        <input type="password" name="confirmPsw" id="register-form__confirmPsw"
+                                            class="form-control" />
+                                        <span class="form-message"></span>
                                     </div>
                                 </div>
-                                <div class="register-form__remember">
-                                    <input type="checkbox" name="remember" />
-                                    I agree to the <a href="#!">Term</a> and
-                                    <a href="#!">Privacy Policy</a>
+                                <div class="register-form__group">
+                                    <label for="email">
+                                        <p>Ghi chú</p>
+                                    </label>
+                                    <textarea id="register-form__note" rows="4" maxlength="200"></textarea>
+                                </div>
+                                <div class="register-form__agree register-form__group">
+                                    <input type="radio" name="agree" />
+                                    <label>I agree to the <a href="#!">Term</a> and <a href="#!">Privacy
+                                            Policy</a></label>
+                                    <span class="form-message"></span>
                                 </div>
                                 <button type="submit" class="register-form__btn">
                                     Register
@@ -513,6 +635,7 @@
     <script src="./assets/js/email.js"></script>
     <script src="./assets/js/scrollToTop.js"></script>
     <script src="./assets/js/nav-active.js"></script>
+    <script src="./assets/js/form-validation.js"></script>
 </body>
 
 </html>

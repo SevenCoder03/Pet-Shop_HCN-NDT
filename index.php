@@ -72,10 +72,10 @@
                             <a href="shop.php" class="navbar__link"> Shop </a>
                         </li>
                         <li>
-                            <a href="#!" class="navbar__link"> Page </a>
+                            <a href="page.php" class="navbar__link"> Page </a>
                         </li>
                         <li>
-                            <a href="#!" class="navbar__link"> Blog </a>
+                            <a href="blog.php" class="navbar__link"> Blog </a>
                         </li>
                         <li>
                             <a href="contact.php" class="navbar__link">
