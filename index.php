@@ -205,7 +205,7 @@
                                         Create an Account
                                     </a>
                                 </div>
-                                <form class="login-form__container">
+                                <form class="login-form__container" action="./src/controllers/login.php" method="POST">
                                     <label for="uname"
                                         ><p>
                                             Username or email <span>*</span>
