@@ -143,12 +143,12 @@
                             </button>
                         </div>
                     </form>
-                    <div class="product-details__categories">
-                        <a href="../product-category/flea&tick.php"><span>Categories:</span> Flea & Tick,</a>
+                    <div class="product-details__categories"><span>Categories:</span>
+                        <a href="../product-category/flea&tick.php"> Flea & Tick,</a>
                         <a href="../product-category/uncategorized.php"> Uncategorized</a>
                     </div>
-                    <div class="product-details__tags">
-                        <a href="../product-tag/pet-essentials.php"><span>Tag:</span> Pet Essentials,</a>
+                    <div class="product-details__tags"><span>Tag:</span>
+                        <a href="../product-tag/pet-essentials.php"> Pet Essentials,</a>
                         <a href="../product-tag/puppy.php"> Puppy</a>
                     </div>
                     <div class="product-details__share">
