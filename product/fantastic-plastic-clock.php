@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aerodynamic Bronze Watch</title>
+    <title>Fantastic Plastic Clock</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png" />
@@ -67,20 +67,20 @@
             <nav class="nav">
                 <a href="../index.php">Home Page</a> >
                 <a href="../shop.php">Shop</a> >
-                <p>Aerodynamic Bronze Watch</p>
+                <p>Fantastic Plastic Clock</p>
             </nav>
 
             <!-- Product details -->
             <div class="product-details">
                 <div class="product-details__left">
-                    <img src="../assets/images/product-15.jpg" alt="Aerodynamic Bronze Watch"
+                    <img src="../assets/images/product-5.jpg" alt="Fantastic Plastic Clock"
                         class="product-details__img">
                 </div>
                 <div class="product-details__right">
                     <span class="product-details__status">In Stock</span>
-                    <h1 class="product-details__title">Aerodynamic Bronze Watch</h1>
-                    <div class="product-details__sku">SKU: AERODYNAMIC-BRONZE-WATCH-57920405</div>
-                    <div class="product-details__price">$786.43</div>
+                    <h1 class="product-details__title">Fantastic Plastic Clock</h1>
+                    <div class="product-details__sku">SKU: FANTASTIC-PLASTIC-CLOCK-55876544</div>
+                    <div class="product-details__price">$305.49</div>
                     <div class="product-details__rating">
                         <div class="rating__star">
                             <img src="../assets/icons/star-full.svg" alt="" />
@@ -91,8 +91,7 @@
                         </div>
                         <span class="rating__review">(5 reviews)</span>
                     </div>
-                    <p class="product-details__desc">Sit cupiditate et dolorem consequatur. Rem quis atque omnis ea
-                        cum in enim. Aperiam qui et fugit. Quia voluptatibus quos fugit.</p>
+                    <p class="product-details__desc">Possimus ut et aspernatur earum et eaque nam. Enim delectus quae magnam voluptas alias omnis sapiente. Perspiciatis molestiae veniam similique facere harum fuga.</p>
                     <form class="product-details__cart">
                         <div class="cart__up">
                             <div id="cart__buy-amount">
@@ -144,12 +143,12 @@
                         </div>
                     </form>
                     <div class="product-details__categories">
-                        <a href="../product-category/flea&tick.php"><span>Categories:</span> Flea & Tick,</a>
-                        <a href="../product-category/uncategorized.php"> Uncategorized</a>
+                        <a href="../product-category/clothings.php"><span>Categories:</span> Clothings,</a>
+                        <a href="../product-category/food.php"> Food</a>
                     </div>
                     <div class="product-details__tags">
-                        <a href="../product-tag/pet-essentials.php"><span>Tag:</span> Pet Essentials,</a>
-                        <a href="../product-tag/puppy.php"> Puppy</a>
+                        <a href="../product-tag/collection.php"><span>Tag:</span> Collection,</a>
+                        <a href="../product-tag/pet-essentials.php"> Pet Essentials</a>
                     </div>
                     <div class="product-details__share">
                         <span>Share:</span>
@@ -181,23 +180,19 @@
             </div>
             <div class="label__content">
                 <div class="desc__content">
-                    <p>Laudantium nihil molestias similique non iusto et non. Similique autem dicta doloribus
-                        dolores similique deserunt sed. Et et velit nulla debitis illum labore inventore. Ea illo
-                        eum omnis sunt dolores ab.</p>
-                    <p>Deserunt officiis earum quo voluptatum. Deserunt reprehenderit veritatis repudiandae
-                        architecto molestiae facere. Cupiditate blanditiis odit sed ullam corporis.</p>
-                    <p>Consequuntur commodi quasi ut dolores ea. Quas excepturi molestias optio expedita modi iure
-                        labore. Iste perferendis nemo quaerat nostrum in tempora sunt animi. Praesentium corrupti
-                        facilis fuga eos distinctio voluptates iste. Est nam quis id nesciunt.</p>
-                    <p>Eum beatae aperiam consequatur earum est modi. Sint voluptatem rerum non doloribus minima.
-                        Corporis est ut distinctio rem ab a sint nobis. Ea corporis omnis provident et recusandae
-                        animi quo.</p>
+                    <p>Et excepturi mollitia et eius quam iusto. Iusto quis adipisci sint suscipit quis. Esse qui magni rerum quae.</p>
+                    <p>Repellendus sequi deleniti aut id odit vel. Culpa ut eveniet inventore voluptatem minus.</p>
+                    <p>Repellendus qui molestiae quod reiciendis voluptas quasi non.</p>
                 </div>
                 <div class="information__content">
                     <table class="information__table">
                         <tr>
-                            <td>Stand Up</td>
-                            <td>35″L x 24″W x 37-45″H (front to back wheel)</td>
+                            <td>Weight</td>
+                            <td>167 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions</td>
+                            <td>137 × 200 × 135 cm</td>
                         </tr>
                         <tr>
                             <td>Folded (W/O Wheels)</td>

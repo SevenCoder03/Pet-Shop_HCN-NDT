@@ -78,8 +78,8 @@
                 <div class="product-details__right">
                     <span class="product-details__status">In Stock</span>
                     <h1 class="product-details__title">Ergonomic Paper Clock</h1>
-                    <div class="product-details__sku">SKU: AERODYNAMIC-BRONZE-WATCH-57920405</div>
-                    <div class="product-details__price">$786.43</div>
+                    <div class="product-details__sku">SKU: ERGONOMIC-PAPER-CLOCK-60065230</div>
+                    <div class="product-details__price">$853.93</div>
                     <div class="product-details__rating">
                         <div class="rating__star">
                             <img src="../assets/icons/star-full.svg" alt="" />
@@ -90,8 +90,7 @@
                         </div>
                         <span class="rating__review">(5 reviews)</span>
                     </div>
-                    <p class="product-details__desc">Sit cupiditate et dolorem consequatur. Rem quis atque omnis ea
-                        cum in enim. Aperiam qui et fugit. Quia voluptatibus quos fugit.</p>
+                    <p class="product-details__desc">Totam ut molestiae excepturi aut omnis magni iste dolorem. Consequatur et dolorum debitis dolorum. Quod dolores similique quas officia accusamus quae blanditiis.</p>
                     <form class="product-details__cart">
                         <div class="cart__up">
                             <div id="cart__buy-amount">
@@ -143,11 +142,11 @@
                         </div>
                     </form>
                     <div class="product-details__categories">
-                        <a href="../product-category/flea&tick.php"><span>Categories:</span> Flea & Tick,</a>
-                        <a href="../product-category/uncategorized.php"> Uncategorized</a>
+                        <a href="../product-category/bowls.php"><span>Categories:</span> Bowls, </a>
+                        <a href="../product-category/flea&tick.php"> Flea & Tick</a>
                     </div>
                     <div class="product-details__tags">
-                        <a href="../product-tag/pet-essentials.php"><span>Tag:</span> Pet Essentials,</a>
+                        <a href="../product-tag/food-pet.php"><span>Tag:</span> Food Pet,</a>
                         <a href="../product-tag/puppy.php"> Puppy</a>
                     </div>
                     <div class="product-details__share">
@@ -180,20 +179,22 @@
             </div>
             <div class="label__content">
                 <div class="desc__content">
-                    <p>Laudantium nihil molestias similique non iusto et non. Similique autem dicta doloribus
-                        dolores similique deserunt sed. Et et velit nulla debitis illum labore inventore. Ea illo
-                        eum omnis sunt dolores ab.</p>
-                    <p>Deserunt officiis earum quo voluptatum. Deserunt reprehenderit veritatis repudiandae
-                        architecto molestiae facere. Cupiditate blanditiis odit sed ullam corporis.</p>
-                    <p>Consequuntur commodi quasi ut dolores ea. Quas excepturi molestias optio expedita modi iure
-                        labore. Iste perferendis nemo quaerat nostrum in tempora sunt animi. Praesentium corrupti
-                        facilis fuga eos distinctio voluptates iste. Est nam quis id nesciunt.</p>
-                    <p>Eum beatae aperiam consequatur earum est modi. Sint voluptatem rerum non doloribus minima.
-                        Corporis est ut distinctio rem ab a sint nobis. Ea corporis omnis provident et recusandae
-                        animi quo.</p>
+                    <p>Ea atque dolore voluptas et in perferendis. Aut alias dolorem dolores excepturi assumenda explicabo.</p>
+                    <p>Aut totam qui unde doloremque voluptatem est quibusdam. Voluptatem dolorem inventore reprehenderit delectus omnis quia ex nobis. Facere consequatur dolores possimus provident assumenda quaerat.</p>
+                    <p>Eius ut reprehenderit velit velit. Aut qui ea voluptatem vitae recusandae omnis at. Voluptate modi impedit fuga ut nulla.</p>
+                    <p>Suscipit quasi quas necessitatibus sunt nobis hic. Odit hic autem ab deserunt dolorem ut. Quia rerum et aut harum assumenda ad. Ipsum ea dolorum tenetur ut rerum dolorem maiores. Alias aut voluptates similique praesentium quibusdam fugiat dicta.</p>
+                    <p>Ipsa consequatur ducimus animi dolore impedit laborum itaque. Reprehenderit ex pariatur blanditiis ducimus magnam ut. Alias voluptatem veniam cum libero velit. Earum et explicabo architecto atque assumenda. Voluptatum commodi perspiciatis qui.</p>
                 </div>
                 <div class="information__content">
                     <table class="information__table">
+                        <tr>
+                            <td>Weight</td>
+                            <td>159 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions</td>
+                            <td>4 × 6 × 149 cm</td>
+                        </tr>
                         <tr>
                             <td>Stand Up</td>
                             <td>35″L x 24″W x 37-45″H (front to back wheel)</td>
