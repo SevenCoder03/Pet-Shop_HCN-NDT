@@ -113,7 +113,7 @@ a {
     justify-content: center;
 }
 
-table {
+table.container__purchase-table {
     margin-top: 40px;
     border-collapse: collapse;
     width: 80%;
@@ -121,7 +121,7 @@ table {
 
 th,
 td {
-    border: 1px solid #666;
+    border: 2px solid var(--primary-color-1);
     padding: 8px;
     text-align: center;
 }
@@ -129,7 +129,9 @@ td {
 th {
     font-size: 1.8rem;
     font-weight: 500;
-    background-color: #f2f2f2;
+    color: #fff;
+    background-color: var(--primary-color-2);
+    line-height: 1.6;
 }
 
 td input {
@@ -151,6 +153,7 @@ td a:hover {
 
 #purchase-table th:nth-child(2),
 #purchase-table td:nth-child(2) {
+    font-weight: 500;
     width: 200px;
 }
 

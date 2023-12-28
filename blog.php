@@ -343,7 +343,8 @@
                             <td>0.00</td>
                         </tr>
                         <tr>
-                            <td colspan="4" style="font-size: 1.8rem; font-weight: 500;">Total</td>
+                            <td colspan="4" style="font-size: 2rem; font-weight: 500; color: var(--primary-color-1);">
+                                Total</td>
                             <td id="total" style="font-weight: 500;">0.00</td>
                         </tr>
                     </tbody>

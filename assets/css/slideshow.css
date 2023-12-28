@@ -119,6 +119,7 @@ a {
 
 .slideshow__item {
     flex: 1;
+    cursor: pointer;
 }
 
 .slideshow__item.active {
