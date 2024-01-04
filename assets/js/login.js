@@ -5,16 +5,6 @@ var loginForm = document.getElementById("login__form");
 const unameInput = document.getElementById("login-form__uname");
 const pswInput = document.getElementById("login-form__psw");
 
-account.addEventListener("click", function () {
-    if (loginForm.style.display === "block") {
-        loginForm.style.display = "none";
-        unameInput.value = "";
-        pswInput.value = "";
-    } else {
-        loginForm.style.display = "block";
-    }
-});
-
 // Username form
 
 unameInput.addEventListener("focus", () => {

@@ -75,7 +75,12 @@
                             <a href="page.php" class="navbar__link"> Page </a>
                         </li>
                         <li>
-                            <a href="blog.php" class="navbar__link"> Blog </a>
+                            <a href="#" class="navbar__link"> Management </a>
+                            <div class="dropdown">
+                                <a href="./product-management.php" class="dropdown__item">Product Management</a>
+                                <br>
+                                <a href="./user-management.php" class="dropdown__item">User Management</a>
+                            </div>
                         </li>
                         <li>
                             <a href="contact.php" class="navbar__link">
@@ -124,7 +129,7 @@
                                     />
                                 </svg>
                             </div>
-                            <div id="login__form" class="action__login-form">
+                            <form id="login__form" class="action__login-form" action="./src/controller/login_form_handle.php" method="POST">
                                 <div class="login-form__head">
                                     <div class="login-form__sign-in">
                                         Sign in
@@ -137,7 +142,7 @@
                                         Create an Account
                                     </a>
                                 </div>
-                                <form class="login-form__container">
+                                <div class="login-form__container">
                                     <label for="uname"
                                         ><p>
                                             Username or email <span>*</span>
@@ -163,14 +168,21 @@
                                     <button
                                         type="submit"
                                         class="login-form__btn"
+                                        name="submit"
                                     >
                                         LOGIN
                                     </button>
-                                </form>
+                                </div>
                                 <a href="#!" class="login-form__lost-pass">
                                     Lost your password?
                                 </a>
+                            </form>
+                            <div id="info__form" class="action__info_form">
+                                <a id="edit_info" href="">Edit Information</a>
+                                <hr>
+                                <a id="logout" href="./src/controller/logout.php">Logout</a>
                             </div>
+                            <!-- End Logout -->
                         </a>
                         <a href="#!" class="action__wishlist">
                             <div class="action__icon">
@@ -3282,5 +3294,32 @@
     <script src="./assets/js/nav-active.js"></script>
     <script src="./assets/js/scrollToTop.js"></script>
 </body>
-
+<script>
+    var loggedIn = <?php echo isset($_SESSION['logged_in']) && $_SESSION['logged_in'] ? 'true' : 'false'; ?>;
+    var account = document.getElementById("account");
+    var logout =document.getElementById("logout");
+    account.addEventListener("click", function () {
+        if (loggedIn) {
+            var loginForm = document.getElementById('login__form');
+            loginForm.style.display = 'none';
+            var infoForm = document.getElementById('info__form');
+            if (infoForm.style.display === "block") {
+                infoForm.style.display = "none";
+            } else {
+                infoForm.style.display = "block";
+            }
+        }
+        else {
+            var infoForm =document.getElementById('info__form');
+            infoForm.style.display="none";
+            if (loginForm.style.display === "block") {
+            loginForm.style.display = "none";
+            unameInput.value = "";
+            pswInput.value = "";
+            } else {
+                loginForm.style.display = "block";
+            }
+        }
+    }); 
+</script>
 </html>
