@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-1: #6839cc;
+    --primary-color-2: #ff782c;
+}
+
+::selection {
+    background-color: var(--primary-color-2);
+    color: white;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "MADE Tommy Soft", sans-serif;
+}
+
+th,
+td {
+    border: 2px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 550;
+}
+
+th {
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--primary-color-2);
+}
+
+/* Product */
+
+.heading {
+    margin-top: 50px !important;
+    font-size: 40px !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.create-btn {
+    display: inline-block;
+    padding: 14px 20px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: var(--primary-color-1);
+}
+
+#search-table {
+    width: 250px;
+    margin-left: 5px;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-family: "MADE Tommy Soft", sans-serif;
+}
+
+#table-product,
+#table-user {
+    width: 100%;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    border-collapse: collapse !important;
+}
+
+#table-product thead,
+#table-user thead {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 3;
+}
+
+#table-product thead tr th,
+#table-user thead tr th {
+    text-align: center;
+}
+
+.product-name {
+    font-weight: 550;
+    color: var(--primary-color-1);
+    overflow: hidden;
+    line-height: 25px;
+}
+
+#table-product thead tr th:nth-child(1) {
+    width: 5%;
+}
+
+#table-product thead tr th:nth-child(2) {
+    width: 15%;
+}
+
+#table-product thead tr th:nth-child(3) {
+    width: 32%;
+}
+
+#table-product thead tr th:nth-child(4) {
+    width: 8%;
+}
+
+#table-product thead tr th:nth-child(5) {
+    width: 10%;
+}
+
+#table-product thead tr th:nth-child(6) {
+    width: 10%;
+}
+
+#table-product thead tr th:nth-child(7) {
+    width: 10%;
+}
+
+#table-product thead tr th:nth-child(8) {
+    width: 10%;
+}
+
+#table-product tbody tr td {
+    height: 100px;
+}
+
+#table-product tbody tr td:nth-child(3) {
+    text-align: start;
+    padding: 20px;
+}
+
+#table-product tbody tr td:nth-child(5) {
+    color: #fff;
+}
+
+#table-product tbody tr td:nth-child(5) span {
+    display: block;
+    background-color: rgb(25, 135, 84) !important;
+    border-radius: 5px;
+    margin: 0px 10px;
+    padding: 10px 2px;
+}
+
+.table-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.action-delete {
+    background-color: var(--primary-color-1);
+}
+
+.action-edit {
+    background-color: var(--primary-color-2);
+}
+
+/* User */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.user-name {
+    font-weight: 550;
+    color: var(--primary-color-1);
+    overflow: hidden;
+    line-height: 25px;
+}
+
+#table-user thead tr th:nth-child(1) {
+    width: 5%;
+}
+
+#table-user thead tr th:nth-child(2) {
+    width: 10%;
+}
+
+#table-user thead tr th:nth-child(3) {
+    width: 20%;
+}
+
+#table-user thead tr th:nth-child(4) {
+    width: 8%;
+}
+
+#table-user thead tr th:nth-child(5) {
+    width: 20%;
+}
+
+#table-user thead tr th:nth-child(6) {
+    width: 10%;
+}
+
+#table-user thead tr th:nth-child(7) {
+    width: 10%;
+}
+
+#table-user thead tr th:nth-child(8) {
+    width: 7%;
+}
+
+#table-user thead tr th:nth-child(9) {
+    width: 10%;
+}
+
+#table-user tbody tr td {
+    height: 100px;
+}
+
+#table-user tbody tr td:nth-child(5) span {
+    line-height: 25px;
+    max-height: 50px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+#table-user tbody tr td:nth-child(6) span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    font-size: 14px;
+}

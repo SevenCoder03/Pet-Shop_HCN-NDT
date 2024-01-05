@@ -1,14 +1,14 @@
-// Lấy danh sách tất cả các thẻ <a> trong navbar
 const navLinks = document.querySelectorAll(".navbar__link");
 
-// Lặp qua từng liên kết
 navLinks.forEach((link) => {
-    // Kiểm tra nếu href của liên kết khớp với URL trang hiện tại
     if (link.href === window.location.href) {
-        document.querySelectorAll(".navbar--active").forEach((item) => {
-            item.classList.remove("navbar--active");
-        });
-        // Thêm lớp 'navbar--active' cho thẻ <li> của liên kết
-        link.closest("li").classList.add("navbar--active");
+        // Kiểm tra xem link.closest("li") có phải là một phần tử hợp lệ hay không
+        const closestListItem = link.closest("li");
+        if (closestListItem) {
+            document.querySelectorAll(".navbar--active").forEach((item) => {
+                item.classList.remove("navbar--active");
+            });
+            closestListItem.classList.add("navbar--active");
+        }
     }
 });

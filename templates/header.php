@@ -1,3 +1,9 @@
+<?php
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    $loggedIn = (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) ? 'true' : 'false';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,10 +42,11 @@
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/slideshow.css">
-    <link rel="stylesheet" href="./assets/css/shop.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="./assets/css/account.css">
     <link rel="stylesheet" href="./assets/css/404.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/shop.css">
+
 </head>
 
 <body>
@@ -65,7 +72,7 @@
             <!-- Navbar -->
             <nav class="header__navbar">
                 <ul class="navbar__list">
-                    <li class="navbar--active">
+                    <li>
                         <a href="./index.php" class="navbar__link"> Home </a>
                     </li>
                     <li>
@@ -74,13 +81,12 @@
                     <li>
                         <a href="./page.php" class="navbar__link"> Page </a>
                     </li>
-                    <li>
-                        <a href="#" class="navbar__link"> Management </a>
-                        <div class="dropdown">
-                            <a href="./product-management.php" class="dropdown__item">Product Management</a>
-                            <br>
-                            <a href="./user-management.php" class="dropdown__item">User Management</a>
-                        </div>
+                    <li class="navbar__dropdown">
+                        <a href="#" class="navbar__link navbar__management"> Management </a>
+                        <ul class="navbar__dropdown-content">
+                            <li><a href="./product-management.php" class="navbar__link dropdown__item">Product</a></li>
+                            <li><a href="./user-management.php" class="navbar__link dropdown__item">User</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="./contact.php" class="navbar__link"> Contact Us </a>
@@ -116,7 +122,8 @@
                                 d="M42,47H6a2,2,0,0,1-2-2V39A16,16,0,0,1,20,23h8A16,16,0,0,1,44,39v6A2,2,0,0,1,42,47ZM8,43H40V39A12,12,0,0,0,28,27H20A12,12,0,0,0,8,39Z" />
                         </svg>
                     </div>
-                    <form id="login__form" class="action__login-form" action="../src/controller/login_form_handle.php" method="POST">
+                    <form id="login__form" class="action__login-form" action="./src/controller/login-handle.php"
+                        method="POST">
                         <div class="login-form__head">
                             <div class="login-form__sign-in">Sign in</div>
                             <a href="account.php" class="login-form__create-account">
@@ -157,12 +164,12 @@
                             Lost your password?
                         </a>
                     </form>
-                    <div id="info__form" class="action__info_form">
-                        <a id="edit_info" href="">Edit Information</a>
-                        <hr>
-                        <a id="logout" href="./src/controller/logout.php">Logout</a>
+                    <div id="info__form" class="action__info-form">
+                        <a id="edit_info" class="info-form__item navbar__link" href="">Edit Information</a>
+                        <a id="logout" class="info-form__item navbar__link"
+                            href="./src/controller/logout.php">Logout</a>
                     </div>
-                     <!-- End Logout -->
+                    <!-- End Logout -->
                 </a>
                 <a href="#!" class="action__wishlist">
                     <div class="action__icon">

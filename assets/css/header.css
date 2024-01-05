@@ -35,6 +35,33 @@
     text-underline-offset: 7px;
 }
 
+.navbar__management {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.navbar__dropdown-content {
+    position: absolute;
+    top: 80px;
+    left: 565px;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown__item {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.navbar__dropdown:hover .navbar__dropdown-content {
+    display: block;
+}
+
 .header__search {
     width: 35.9%;
     position: relative;
@@ -195,6 +222,25 @@
 
 .login-form__lost-pass:hover {
     color: #000;
+}
+
+.action__info-form {
+    position: absolute;
+    display: none;
+    color: #000;
+    top: 88px;
+    right: 270px;
+    z-index: 2;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-top: 2px solid var(--primary-color-2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-form__item {
+    display: block;
+    padding: 10px;
 }
 
 .action__icon {

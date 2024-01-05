@@ -110,7 +110,7 @@
                         <input type="email" name="email" id="question-form__email" placeholder="Email" required />
                         <textarea name="question" id="question-form__question" cols="40" rows="4"></textarea>
                     </form>
-                    <button class="question-form__btn btn">
+                    <button class="question-form__btn">
                         Send Your Message
                         <div class="chevron">
                             <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none"

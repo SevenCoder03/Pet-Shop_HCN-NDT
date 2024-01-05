@@ -55,3 +55,5 @@
     <?php
         include_once("./templates/footer.php");
     ?>
+
+    <script src="./assets/js/slideshow.js"></script>
